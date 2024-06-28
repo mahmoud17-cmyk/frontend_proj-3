@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --Brightorange: hsl(31, 77%, 52%);
+    --Darkcyan: hsl(184, 100%, 22%);
+    --Verydarkcyan: hsl(179, 100%, 13%);
+}
+body {
+    font-family: "Lexend Deca", sans-serif;
+    padding: 10%;
+    display: flex;
+    justify-content: center;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 370px); 
+}
+@media (max-width:767px ) {
+    .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+ .container .box {
+    padding: 3rem;
+    background-color: silver;
+}
+.container .box .text h1 {
+    color: white;
+    padding: 20px 0;
+}
+.container .box .text p {
+    color: #ffffffb5;
+    line-height: 2;
+    letter-spacing: 1.5px;
+    font-size: 18px;
+} 
+.container .box .link {
+    margin-top: 70px;
+}
+.container .box .link a {
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+.container .box-1 .link:hover a  {
+    color: var(--Brightorange);
+}
+.container .box-2 .link:hover a {
+    color: var(--Darkcyan);
+}
+.container .box-3 .link:hover a {
+    color: var(--Verydarkcyan);
+}
+.container .box .link a:hover {
+    background-color: white;
+}
+.container .box-1 {
+    background-color: var(--Brightorange);
+}
+.container .box-2 {
+    background-color: var(--Darkcyan);
+}
+.container .box-3 {
+    background-color: var(--Verydarkcyan);
+}
